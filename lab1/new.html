@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title> Form of user register </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<style type="text/css">
+ body { /* Стиль для всего документа */
+ font-size: 14pt; /* Размер шрифта */
+ font-family: "Perpetua", sans-serif; /* Название шрифта */
+ }
+ label { /* Стиль для всех элементов label */
+ display: inline-block; /* Тип блока */
+ width: 200px; /* Ширина */
+ vertical-align: top; /* Вертикальное выравнивание */
+ }
+ select { /* Стиль для всех списков */
+ width: 250px; /* Ширина */
+ border: 1px solid black; /* Определение стиля для границы */
+ }
+ input.pole { /* Стиль для элемента input, имеющего класс pole */
+ width: 250px; /* Ширина */
+ border: 1px solid black; /* Определение стиля для границы */
+ }
+ textarea { /* Стиль для многострочного текстового поля */
+ width: 250px; /* Ширина */
+ height: 100px; /* Высота */
+ border: 1px solid black; /* Определение стиля для границы */
+ }
+ form div { /* Стиль для всех div, расположенных внутри form */
+ margin-bottom: 20px; /* Отступ блока снизу */
+ }
+ form #choice1 {
+ margin-left: 85px;
+ }
+  form #choice2 {
+ margin-left: 85px;
+ }
+ </style>
+ </head>
+<body background="fon.jpg">
+	<h4>
+		Please complete the form below. Mandatory fields marked *
+	</h4>
+	
+ <form action="reg.php" method="POST" enctype="multipart/form-data">
+	<div>
+		<label for="name"> Name * </label>
+		<input type="text" name="name" id="name" class="pole">
+	</div>
+	<div>
+		<label for="address1"> Address * </label>
+		<input type="text" name="address1" id="address1" class="pole">
+	</div>
+	<div>
+		<label for="address2"> Town/City * </label>
+		<input type="text" name="address2" id="address2" class="pole">
+	</div>
+	<div>
+		<label for="address3"> Country * </label>
+		<input type="text" name="address3" id="address3" class="pole">
+	</div>
+	<div>
+		<label for="index"> Postcode * </label>
+		<input type="text" name="index" id="index" class="pole">
+	</div>
+	<div>
+		<label for="choise1"> Is this address also your invoice address? </choise1>
+			<input type="radio" name="choise" id="choice1" value="1">Yes 
+			<input type="radio" name="choise" id="choice2" value="2">No 
+	</div>
+	<div>
+		<input type="submit" value="Send" style="margin-left: 150px;">
+	</div>
+ </form>
+</body>
+</html> 
