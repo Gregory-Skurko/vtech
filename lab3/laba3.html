@@ -1,0 +1,67 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+
+
+	<div class="col-md-2">
+		<form action="laba3.php" method="post">		
+			<table>
+			<tr>
+			<td>
+			
+			<input class="form-control" type="text" name="path" value="">
+			
+			</td>
+			<td>
+			
+			<input class="btn btn-default" type="submit" name="go" value="Go">
+			
+			</td>
+			</tr>
+			</table>
+		</form>
+	</div>
+	<div class="col-md-10">
+
+		<table class="table table-bordered" cellspacing='0'>
+			<tbody>
+				<?php 
+					if (isset($files)) {
+						for($i=0; $i<sizeof($files); $i++) {			
+							if (substr($files[$i], -2) !== ".\\" and substr($files[$i], -3) !== "..\\") {
+				?>
+				<tr><td>
+				<?php
+								echo $files[$i];
+				?>
+				</td></tr>
+				<?php
+							}
+						}
+					}
+					else {
+						if (isset($_POST["path"])) {
+				?>
+				<tr><td>
+				<?php
+							echo $_POST["path"].' -такой директории нет;<br>';
+				?>
+				</td>
+				</tr>
+				<?php
+						}
+					}
+						
+				?>
+			</tbody>
+		</table>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<style>
+	 body { 
+		margin-left: 250px;
+		margin-top: 350px;
+		font-size: 14pt; 
+		font-family: "Bookman Old Style", sans-serif; 
+	}
+	label { 
+		display: inline-block; 
+		width: 200px; 
+		vertical-align: top; 
+	}
+	input.pole { 
+		width: 250px; 
+		border: 1px solid black; 
+	}
+	form div { 
+	margin-bottom: 20px; 
+	}
+	select { 
+		width: 250px; 
+		border: 1px solid black; 
+	}
+	input.radio {
+		margin-left: 80px;
+	}
+	textarea { 
+		width: 250px; 
+		height: 100px; 
+		border: 1px solid black; 
+	}
+	.b1{
+		background:yellow;
+		margin-left: 50px;
+		width:200px;
+	}
+</style>

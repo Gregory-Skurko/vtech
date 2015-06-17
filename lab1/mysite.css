@@ -1,0 +1,31 @@
+	body {
+      font-size: 14pt;
+      font-family: "Perpetua", sans-serif;
+     }
+     label {
+      display: inline-block;
+      width: 200px;
+      vertical-align: top;
+     }
+     select {
+      width: 250px;
+      border: 1px solid black;
+     }
+     input.pole {
+      width: 250px;
+      border: 1px solid black;
+     }
+     textarea {
+      width: 250px;
+      height: 100px;
+      border: 1px solid black;
+     }
+     form div {
+      margin-bottom: 20px;
+     }
+     form #choice1 {
+      margin-left: 85px;
+     }
+     form #choice2 {
+      margin-left: 5px;
+     }

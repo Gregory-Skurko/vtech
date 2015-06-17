@@ -1,8 +1,0 @@
-<?php
-$var = 7;
-echo gettype($var);
-$str = 'Строка';
-echo gettype($str);
-$bool = true;
-echo gettype($bool);
-?>

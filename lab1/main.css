@@ -1,0 +1,30 @@
+	<style>
+	body {
+	background-image: url(D:\www\vtech\lab1\title.jpg);
+	}
+	.h2{
+		font-size: 18pt; 
+		font-family: "Bookman Old Style";
+		}
+	.text{
+		margin-left: 700px;
+		text-align:justify;
+		font-family: "High Tower Text";
+		font-size: 14pt;
+		word-spacing:27px;
+		line-height: 25px;
+	}
+	.text1{
+		margin-left: 700px;
+		margin-top: 150px;
+		text-align:justify;
+		font-family: "High Tower Text";
+		font-size: 14pt;
+		word-spacing:27px;
+		line-height: 25px;
+	}
+	.p1{
+		margin-left: 1030px;
+		margin-top: -10px;
+	}
+	</style>
